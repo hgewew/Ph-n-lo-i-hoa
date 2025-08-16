@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân loại hoa Iris</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f8fa;
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.2);
+        }
+        input {
+            margin: 8px 0;
+            padding: 8px;
+            width: 220px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌸 Dự đoán loài hoa Iris</h1>
+    <form method="POST">
+        <input type="number" step="0.01" name="sepal_length" placeholder="Sepal Length (cm)" required><br>
+        <input type="number" step="0.01" name="sepal_width" placeholder="Sepal Width (cm)" required><br>
+        <input type="number" step="0.01" name="petal_length" placeholder="Petal Length (cm)" required><br>
+        <input type="number" step="0.01" name="petal_width" placeholder="Petal Width (cm)" required><br>
+        <button type="submit">Dự đoán</button>
+    </form>
+
+    {% if result %}
+    <div class="result">{{ result }}</div>
+    {% endif %}
+</body>
+</html>
