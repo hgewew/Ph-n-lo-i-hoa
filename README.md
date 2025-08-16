@@ -1,9 +1,9 @@
-Bài làm về gì?
+  Bài làm về gì?
 Bài làm xây dựng ứng dụng web phân loại hoa Iris.
 Người dùng nhập 4 tham số đặc trưng của hoa (Sepal Length, Sepal Width, Petal Length, Petal Width).
 Hệ thống sử dụng mô hình học máy (K-Nearest Neighbors – KNN) đã huấn luyện trên bộ dữ liệu Iris để dự đoán loài hoa tương ứng (Setosa, Versicolor hoặc Virginica).
 Giao diện web giúp người dùng dễ dàng nhập thông tin và xem kết quả dự đoán trực quan.
-Sử dụng công nghệ, thuật toán, ngôn ngữ lập trình gì?
+  Sử dụng công nghệ, thuật toán, ngôn ngữ lập trình gì?
 1. Công nghệ
 Flask (Python Web Framework): xây dựng ứng dụng web và giao diện người dùng.
 HTML/CSS: thiết kế form nhập liệu và hiển thị kết quả.
